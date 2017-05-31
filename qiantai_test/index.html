@@ -1,0 +1,250 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keywords" content="好吃猫,微信小店，微信店铺,网上便利店,微信订餐,微信点餐,微店怎么开,微信开店,小卖铺,扫码录商品，O2O" />
+	<meta name="description" content="好吃猫是业界唯一彻底免费的微信商铺系统,累计为5000家店铺提供服务,帮小微商铺、便利店实现手机开店" />
+	<title>好吃猫-业界唯一彻底免费的微信商铺系统,便利店|外卖餐厅|微信订餐|微信点餐|微信外卖|微信便利店|超市</title>
+	<script src="./resource/haochimall/jquery/jquery-1.11.0.min.js?v=1.3"></script>
+	<script src="./resource/haochimall/jquery/jquery.effects.core.js?v=1.3"></script>
+	<script src="./resource/haochimall/jquery/jquery.effects.slide.js?v=1.3"></script>
+	<link rel="stylesheet" href="./resource/haochimall/css/public.css?v=1.3">
+	<link rel="stylesheet" href="./resource/haochimall/css/index.css?v=1.5">
+	<link rel="stylesheet" href="./resource/haochimall/css/version.2.0.css?v=2.1">
+	<link href="http://vjs.zencdn.net/4.5/video-js.css" rel="stylesheet">
+	<script src="http://vjs.zencdn.net/4.5/video.js"></script>
+<style type="text/css">
+ #ie6-warning{
+        background:#f8efb4;
+        position:absolute;
+        top:0;
+        left:0;
+        font-size:16px;
+        color:#333;
+        width:100%;
+        padding: 2px 15px 2px 23px;
+        text-align:left;
+        }
+        #ie6-warning a {
+            text-decoration:none;
+            }
+</style>                                            
+</head>
+<body> 
+<!--[if lte IE 6]> 
+<div id="ie6-warning">您正在使用 Internet Explorer 6，在本页面的显示效果可能有差异。建议您升级到 <a href="http://www.microsoft.com/china/windows/internet-explorer/" target="_blank">Internet Explorer 8</a> 或以下浏览器：<a href="http://www.google.com/chrome/?hl=zh-CN">Chrome</a> / <a href="http://www.mozillaonline.com/">Firefox</a> / <a href="http://www.apple.com.cn/safari/">Safari</a> / <a href="http://www.operachina.com/">Opera</a> 
+</div> 
+ <script type="text/javascript">
+ function position_fixed(el, eltop, elleft){
+     // check if this is IE6
+     if(!window.XMLHttpRequest)
+         window.onscroll = function(){
+             el.style.top = (document.documentElement.scrollTop + eltop)+"px";
+             el.style.left = (document.documentElement.scrollLeft + elleft)+"px";
+             }
+             else el.style.position = "fixed";
+             }
+             position_fixed(document.getElementById("ie6-warning"),0, 0);
+             </script>
+             <![endif]-->
+	<div id="page">		
+		<div id="header">
+	<div class="header">
+		<div id="logo"><a href=""><img src="./resource/haochimall/images/logo4.png?v=1.3" alt="好吃猫"></a></div>
+		<div id="nav">
+			<ul>
+				<li id="index"><a href="index.html">首页</a></li>
+				<li id="indetail"><a href="indetail.html">了解详情</a></li>
+				<li id="case"><a href="case.html">成功案例</a></li>
+				<li id="help"><a href="help.html">新手帮助</a></li>
+				<li id="loginAct" style="padding-right: 0px;padding-left: 10px;"><span class="freeTrial_login">登录</span></li>
+				<li id="freeTrial" style="padding-left: 10px;padding-right: 5px;"><span class="freeTrial">免费注册</span></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<script>
+$('.freeTrial').click(function(){
+	window.location.href = 'member.php?act=register';
+});
+$('#loginAct').click(function(){
+	window.location.href = 'member.php?act=login';
+});
+$(function(){
+	var page = $(document.location.href.split('/')).last();
+	$('#'+page[0]).addClass('actived');
+	if(page[0]=="index#login"){
+	$('#index').addClass('actived');
+	}
+});
+
+</script>
+		<div id="banner">
+			<div id="banner4" class="banner">
+				<div id="bannerContent1" class="bannerContent">					
+					<dl>
+
+						<h2 class="h2_title">好吃猫</h2>
+						<dd id="desc"><h4 style="font-weight: 100;">最好用的微信点餐系统</h4></dd>
+						<dd id="trial"><p>立即使用</p></dd>
+					</dl>
+										<div id="phone1"><img style="width:240px;" src="./resource/haochimall/images/phone4.png?v=2.5" alt=""></div>
+				</div>	
+			</div>
+		</div>
+		<div id="content">
+			<div class="contentDiv">
+				<div id="content1" class="content">
+					<div class="leftPart"><img src="./resource/haochimall/images/zgd_role1.png?v=1.3" alt=""></div>
+					<div class="rightPart">
+						<ul class="words">
+							<li class="style1">超过<num>6000</num>个商家入驻</li>
+							<li class="style2"><button id="title_case">看看谁是好吃猫&nbsp;→</button></li> 	
+							<li class="style3"><blockquote class="style1"><h4>好吃猫帮您玩转微信开店，免费创建微信外卖店,微信便利店</h4></blockquote></li>							
+						</ul>
+						<div id="case">
+							<div>
+								<ul>
+									<li class="case_logo">
+										<img src="./resource/haochimall/images/zgd_case1.png?v=1.3" alt="家佰便利店">
+									<!--	<blockquote class="style2"><span class="bot"></span><span class="top"></span><img src="upload_pic/qrcode_1405911496.jpg?v=1.3" alt=""></blockquote>-->
+									</li>
+									<li class="case_name">家佰便利店</li>
+									<li class="case_address">北京市朝阳区</li>
+								</ul>
+							</div>
+							
+							<div>
+								<ul>
+									<li class="case_logo">
+										<img src="./resource/haochimall/images/zgd_case2.png?v=1.3" alt="果美人">
+									<!--	<blockquote class="style2"><span class="bot"></span><span class="top"></span><img src="upload_pic/qrcode_1398350730.jpg?v=1.3" alt=""></blockquote>-->
+									</li>
+									<li class="case_name">零生活</li>
+									<li class="case_address">北京市海淀区</li>
+								</ul>
+							</div>
+							<div>
+								<ul>
+									<li class="case_logo">
+										<img src="./resource/haochimall/images/zgd_case3.png?v=1.3" alt="萃泽轩">
+									<!--	<blockquote class="style2"><span class="bot"></span><span class="top"></span><img src="upload_pic/qrcode_1400634010.jpg?v=1.3" alt=""></blockquote>-->
+									</li>
+									<li class="case_name">小米鸡排</li>
+									<li class="case_address">北京市朝阳区</li>
+								</ul>
+							</div>
+							<div>
+								<ul>
+									<li class="case_logo">
+										<img src="./resource/haochimall/images/zgd_case4.png?v=1.3" alt="美汇通便利店">
+									<!--	<blockquote class="style2"><span class="bot"></span><span class="top"></span><img src="upload_pic/qrcode_1401032909.jpg?v=1.3" alt=""></blockquote>-->
+									</li>
+									<li class="case_name">美汇通便利店</li>
+									<li class="case_address">深圳市龙岗区</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="contentDiv white">
+				<div id="content2" class="content">
+					<div class="leftPart">
+						<ul>
+							<li><h2>加入好吃猫</h2></li>
+							<li class="sofast">5分钟把店铺搬进手机，3步完成微信下单，3000多家店铺的共同选择：</li>
+							<li class="equation">
+								<h4 class="hexagon1" style="font-weight: 100;">微信开店</h4>
+								<h4 class="plus1" style="left:155px;top:65px;font-weight: 100;"></h4>
+								<span class="hexagon1" style="left:198px">二维码推广</span>
+								<span class="equal" style="left:351px;top:65px"></span>
+								<span class="hexagon2" style="left:393px">粉&nbsp;丝</span>
+								<span class="plus2" style="left:547px;top:65px"></span>
+								<span class="hexagon2" style="left:589px">收&nbsp;益</span>
+							</li>
+							<li><button id="reg">立即注册</button></li>
+						</ul>
+					</div>
+					<div class="rightPart"><img src="./resource/haochimall/images/zgd_role2.png?v=1.3" alt="" width="220"></div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+	<div class="footer">
+		
+		<div class="footer_left">
+			<div >
+			<img class="footer_qecode" width="200px" src="./resource/haochimall/images/qrcode.jpg?v=1.3"/>
+			</div>
+			<div class="lab_footer">
+			<label >轻松一扫体验好吃猫</label>
+			</div>
+		</div>
+		<div class="footer_right">
+			<dl>
+				<dt>联系我们</dt>
+				<dd>合肥叶凡网络科技有限公司</dd>
+				<dd>电话：400-0551-422</dd>
+				<dd>传真：0551-65867402</dd>
+				<dd>地址：安徽省合肥市蜀山区黄山路588号</dd>
+                </dl>
+		</div>
+		<div class="footer_right">
+			<dl>
+				<dt>客服</dt>
+				<dd>客服-天晴<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=980642339&site=qq&menu=yes"><img style="margin-left: 12px;vertical-align: middle;"  src="./resource/haochimall/images/button_qq.gif" alt="点击这里给我发消息" title="点击这里给我发消息"/></a></dd>
+				<dd> </dd>
+				</dl>
+		</div>
+	
+		<iframe name="in" style="width:1px;height:1px" class="hide"></iframe>
+		<div class="hm_baidu" style="display:none">
+		<script type="text/javascript">
+		var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+		document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F4c0961daf4410d5fdb70bf9b0c1f661a' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+		</div>
+	</div>			
+</div>
+<div style="display:none">
+   <script src="http://s19.cnzz.com/stat.php?id=5926090&web_id=5926090" language="JavaScript"></script>
+ 
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F4c0961daf4410d5fdb70bf9b0c1f661a' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</div>
+<div class="footer_footer" >
+			<div class="footer_footer_ni">
+				<span class=>Copyright©2014 www.hfyefan.com All Rights Reserved 合肥叶凡网络科技有限公司</span>
+			</div>
+		</div>
+	</div>
+<script>
+	$('#loginAct').click(function(){
+		window.location.href = 'member.php?act=login';
+	});
+	$('.freeTrial').click(function(){
+		window.location.href = 'member.php?act=register';
+	});	
+	$('#trial').click(function(){
+		window.location.href = 'member.php?act=register';
+	});
+	$('#reg').click(function(){
+		window.location.href = 'member.php?act=register';
+	});
+	$('#title_case').click(function(){
+		window.location.href = '/site/case';
+	});
+</script>
+
+<div style="display:none">
+   <script src="http://s19.cnzz.com/stat.php?id=5926090&web_id=5926090" language="JavaScript"></script>
+ </div>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<html>
+<head>
+	<meta charset="utf-8" />
+	<script type="text/javascript" src="jquery/jquery.js"></script>
+
+	<script>
+		$(function(){
+			$("#btnHide").click(function(){
+				$("#p1").hide("fast");
+			});
+		});
+
+		$(function(){
+			$("#btnShow").click(function(){
+				$("#p1").show("fast");
+			});
+		});
+
+		$(function(){
+			$("#btnSh").click(function(){
+				$("#p1").toggle();
+			});
+		});
+
+		$(function(){
+			$("#btnDown").click(function(){
+				$("#p1").slideDown();
+			});
+		});
+	</script>
+
+</head>
+<body>
+	<p id="p1">我只为人民币服</p>
+	<input type="button" id="btnHide" value="hide" />
+	<input type="button" id="btnShow" value="show" />
+	<input type="button" id="btnSh" value="hide/show" />
+	<input type="button" id="btnDown" value="slidedown" />
+</body>
+</html>

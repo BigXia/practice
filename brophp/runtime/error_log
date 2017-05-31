@@ -1,0 +1,5 @@
+[30-Mar-2016 22:08:39 PRC] PHP Warning:  The magic method __get() must have public visibility and cannot be static in /home/wwwroot/sfc/domain/sfc/web/brophp/brophp/classes/page.class.php on line 86
+[30-Mar-2016 22:08:46 PRC] PHP Warning:  The magic method __get() must have public visibility and cannot be static in /home/wwwroot/sfc/domain/sfc/web/brophp/brophp/classes/page.class.php on line 86
+[30-Mar-2016 22:08:49 PRC] PHP Warning:  The magic method __get() must have public visibility and cannot be static in /home/wwwroot/sfc/domain/sfc/web/brophp/brophp/classes/page.class.php on line 86
+[30-Mar-2016 22:08:49 PRC] PHP Warning:  The magic method __get() must have public visibility and cannot be static in /home/wwwroot/sfc/domain/sfc/web/brophp/brophp/classes/page.class.php on line 86
+[30-Mar-2016 22:08:53 PRC] PHP Warning:  The magic method __get() must have public visibility and cannot be static in /home/wwwroot/sfc/domain/sfc/web/brophp/brophp/classes/page.class.php on line 86

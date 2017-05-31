@@ -1,0 +1,331 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="好吃猫新手帮助，教您微信开店，3步到位" />
+	<title>好吃猫新手帮助，帮您一步步开启好吃猫微信店铺</title>
+	<script src="./resource/haochimall/jquery/jquery-1.11.0.min.js?v=1.3"></script>
+	<script src="./resource/haochimall/jquery/jquery.effects.core.js?v=1.3"></script>
+	<script src="./resource/haochimall/jquery/jquery.effects.slide.js?v=1.3"></script>
+	<link rel="stylesheet" href="./resource/haochimall/css/public.css?v=1.3">
+	<link rel="stylesheet" href="./resource/haochimall/css/version.2.0.css?v=2.2">
+</head>
+<style>
+.page_back{
+	margin: auto auto;
+	width: 960px;
+}
+#page_help{
+	background: #faf8f8;
+	position: absolute;
+	width: 100%;
+}
+.div_title{
+	font-size: 24px;
+	text-align: left;
+	color: #28d2e6;
+	padding: 20px 25px;
+	border-bottom: 2px solid #28d2e6;
+	}
+.div_font{
+	font-size:16px;
+	text-align:left;
+	margin-left:25px;
+}
+.div_begin{
+	text-align:left;
+	width:960px;
+	float: left;
+	background:#fff;
+	padding:2em 0;
+	margin-bottom: 2em;
+}
+.div_accont{
+	font-size:20px;
+	margin-left: 25px;
+	font-weight: 800;
+}
+.div_img{
+	margin:auto auto;
+	width:960px;
+	text-align: center;
+	background: #fff;
+	padding:20px 0px;
+}
+.div_img img{
+	border: 1px solid #f1f1f1;
+}
+.div_img_top{
+	text-align: left;
+	margin-top: 15px;
+	font-size:16px;
+	margin-left: 25px;
+}
+#page_help .section{display:none}
+#page_help #section .section:first-child{display:inline}
+
+#stepTabs{width:960px;padding-top:60px;background:#fff}
+#stepTabs ul{width:100%;height:56px;text-align:left;border-bottom:4px solid #8edde6;position:relative;margin: 0 5px 0 0px;}
+#stepTabs ul .stepTab{display:inline-block;text-align:center;padding:12px 11px;background:#faf8f8;margin:0 9.5px;color:#2fc0f6;behavior: url(/PIE/PIE.htc);
+	-moz-border-radius-topright:5px;
+	-webkit-border-top-right-radius:5px;
+	border-top-right-radius:5px;
+	-moz-border-radius-topleft:5px;
+	-webkit-border-top-left-radius:5px;
+	border-top-left-radius:5px;
+	-moz-border-radius-bottomleft:0;
+	-webkit-border-bottom-left-radius:0;
+	border-bottom-left-radius:0;
+	-moz-border-radius-bottomright:0;
+	-webkit-border-bottom-right-radius:0;
+	border-bottom-right-radius:0;
+}
+#stepTabs ul .stepTab:first-child{margin-left:0}
+#stepTabs ul .stepTab.last-child{margin-right:0}
+#stepTabs ul .stepTab.active{background:#24b0cf;color:#fff}
+#stepTabs ul .stepTab:hover{background:#24b0cf;color:#fff}
+#stepTabs ul .stepTab span{margin-right:8px}
+
+#stepTabs,#stepTabs ul,#stepTabs ul li{float:left}
+.footer_footer{bottom:0px;margin-bottom: -50px;}
+</style>
+<body>
+	<div id="page_help">	
+		<div id="header">
+	<div class="header">
+		<div id="logo"><a href=""><img src="./resource/haochimall/images/logo4.png?v=1.3" alt="好吃猫"></a></div>
+		<div id="nav">
+			<ul>
+				<li id="index"><a href="/">首页</a></li>
+				<li id="indetail"><a href="indetail.html">了解详情</a></li>
+				<li id="case"><a href="case.html">成功案例</a></li>
+				<li id="help"><a href="help.html">新手帮助</a></li>
+				<li id="loginAct" style="padding-right: 0px;padding-left: 10px;"><span class="freeTrial_login">登录</span></li>
+				<li id="freeTrial" style="padding-left: 10px;padding-right: 5px;"><span class="freeTrial">免费注册</span></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<script>
+$('.freeTrial').click(function(){
+	window.location.href = '/member.php?act=login';
+});
+$('#loginAct').click(function(){
+	window.location.href = 'member.php?act=register';
+});
+$(function(){
+	var page = $(document.location.href.split('/')).last();
+	$('#'+page[0]).addClass('actived');
+	if(page[0]=="index#login"){
+	$('#index').addClass('actived');
+	}
+});
+
+</script>
+			<div class="page_back">
+	<div id="stepTabs">
+		<ul class="f18">
+			<li class="stepTab active" step="step1"><span class="f14">①</span>注册好吃猫</li>
+			<li class="stepTab" step="step2"><span class="f14">②</span>注册微信账号</li>
+			<li class="stepTab" step="step3"><span class="f14">③</span>设置账号</li>
+			<li class="stepTab" step="step4"><span class="f14">④</span>设置店铺信息</li>
+			<li class="stepTab" step="step5"><span class="f14">⑤</span>商品分类</li>
+			<li class="stepTab last-child" step="step6"><span class="f14">⑥</span>商品信息</li>
+		</ul>
+	</div>
+	<div id="section" class="div_begin">		
+		<div id="step1" class="section">
+			<div class="div_accont">
+				<label>第一步：注册好吃猫帐号<label>
+			</div>
+			<div class="div_font">
+				<label>访问好吃猫注册页面<a style="color:red;" href="http://www.songkc.cn">http://www.songkc.cn</a>，按要求填写各项信息。</label>
+			</div>
+			<div class="div_img">
+				<img width="650px" src="./resource/haochimall/images/step3.png?v=1.3" />
+			</div>
+		</div>
+		<div id="step2" class="section">
+			<div class="div_accont">
+				<label>第二步：注册微信公众帐号<label>
+			</div>
+			<div class="div_img_top">
+				<label>2.1访问腾讯微信公众平台官方网站<a style="color:red;" href="http://mp.weixin.qq.com">http://mp.weixin.qq.com</a> ，点击右上角立即注册</label>
+			</div>
+			<div class="div_img">
+				<img src="./resource/haochimall/images/help1.jpg?v=1.3" />
+			</div>
+			<div class="div_img_top">
+				<label>2.2进入资料填写页面，按要求填写好各项资料</label>
+			</div>
+			<div class="div_img">
+				<img src="./resource/haochimall/images/help2.jpg?v=1.3" />
+			</div>
+			<div class="div_img_top">
+				<span style="color:red;">注意：</span>
+				<label>注册微信公众帐号后需要等待审核通过，才能继续下面的步骤，否则不能看到下面的“群发消息”和“高级功能”两个选项。<br>
+				审核时间最长为7个工作日。一般为2-3天。</label><br>
+			</div>
+		</div>
+		<div id="step3" class="section">
+			<div class="div_accont">
+				<label>第三步：设置微信公众帐号<label>
+			</div>
+			<div class="div_img_top">
+			<label>3.1注册成功后，进入到后台公共号设置选项，设置公众号的头像（将在微信中显示给顾客看，可以设置成您的店铺照片等）<br>、微信号、地区、功能介绍等帐号信息。</label>
+			</div>
+			<div class="div_img">
+				<img width="650px" src="./resource/haochimall/images/help3.jpg?v=1.3" />
+			</div>
+			<div class="div_img_top">
+				<label>3.2点击开发者中心，进入开发模式,，并成为开发者。</label>
+			</div>
+			<div class="div_img">
+				<img src="./resource/haochimall/images/help4.jpg?v=1.3" />
+			</div>
+			<div class="div_img_top">
+				<label>3.3在开发模式下，填写服务器配置信息，将URL和Token分别修改为  <b style="color:red;">weixin/callback</b> 和 <b style="color:red;">zhangguide</b>，提交之后启用服务器配置。</label>
+			</div>
+			<div class="div_img">
+				<img src="./resource/haochimall/images/help5.jpg?v=2.1" />
+			</div>
+			<div class="div_img">
+				<img src="./resource/haochimall/images/help6.jpg?v=2.1" />
+			</div>
+			<div class="div_img_top">
+				<label>到这里，微信公众平台端的配置就完成了。</label>
+			</div>
+		</div>
+		
+		<div id="step4" class="section">
+			<div class="div_accont">
+				<label>第四步：设置微信公共帐号、店铺信息。<label>
+			</div>
+			<div class="div_font">
+			<label>4.1登录进入后台，设置自己的店铺信息（<span style="color:red;">店铺名称、微信号、微信的原始ID</span>)、商品信息、商品分类等，<br>设置成功后自动更新到微信前端。</label>
+			</div>
+			<div class="div_img">
+				<img width="650px" src="./resource/haochimall/images/help7.png?v=2.1" />
+			</div>
+			<div class="div_font">
+			<label>4.2  访问腾讯微信公众平台官方网站http://mp.weixin.qq.com  查看店铺二维码（标1） 和 二维码下载（标2)</label>
+			</div>
+			<div class="div_img">
+				<img width="650px" src="./resource/haochimall/images/help8.png?v=2.1" />
+			</div>
+			<div class="div_font">
+			<label>4.3  手机端登陆微信扫描二维码关注店铺后，回复1，即可进入店铺，进行商品选择和购买（需要您在后台添加商品）</label>
+			</div>
+			<div class="div_img">
+				<img width="650px" src="./resource/haochimall/images/help9.png?v=2.2" />
+			</div>
+            <div class="div_font">
+			<label>4.4  下载手机app后台管理软件来更方便的管理您的商品和订单</label>
+			</div>
+            <div class="div_img">
+				<img width="650px" src="./resource/haochimall/images/help10.jpg" />
+			</div>
+			<div class="div_accont">
+			<label>设置完成。</label>
+			</div>
+		</div>
+		<div id="step5" class="section">
+			<div class="div_accont">
+				<label>第五步：商品分类<label>
+			</div>
+			<div class="div_font">
+				<label>在网站后台可以管理商品分类</label>
+			</div>
+			<div class="div_img">
+				<img width="650px" src="./resource/haochimall/images/step5.png?v=1.3" />
+			</div>
+		</div>
+		<div id="step6" class="section">
+			<div class="div_accont">
+				<label>第六步：录入并管理商品<label>
+			</div>
+			<div class="div_font">
+				<label>在网站后台录入并管理商品</label>
+			</div>
+			<div class="div_img">
+				<img width="650px" src="./resource/haochimall/images/step61.png?v=1.3" />
+			</div>
+			<div class="div_img">
+				<img width="650px" src="./resource/haochimall/images/step62.png?v=1.3" />
+			</div>
+		</div>
+	</div>
+</div>
+		<div id="footer">
+	<div class="footer">
+		
+		<div class="footer_left">
+			<div >
+			<img class="footer_qecode" width="200px" src="./resource/haochimall/images/qrcode.jpg?v=1.3"/>
+			</div>
+			<div class="lab_footer">
+			<label >轻松一扫体验好吃猫</label>
+			</div>
+		</div>
+		<div class="footer_right">
+			<dl>
+				<dt>联系我们</dt>
+				<dd>合肥叶凡网络科技有限公司</dd>
+				<dd>电话：400-0551-422</dd>
+				<dd>传真：0551-65867402</dd>
+				<dd>地址：安徽省合肥市蜀山区黄山路588号</dd>
+                </dl>
+		</div>
+		<div class="footer_right">
+			<dl>
+				<dt>客服</dt>
+				<dd>客服-天晴<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=980642339&site=qq&menu=yes"><img style="margin-left: 12px;vertical-align: middle;"  src="./resource/haochimall/images/button_qq.gif" alt="点击这里给我发消息" title="点击这里给我发消息"/></a></dd>
+				<dd> </dd>
+				</dl>
+		</div>
+	
+		<iframe name="in" style="width:1px;height:1px" class="hide"></iframe>
+		<div class="hm_baidu" style="display:none">
+		<script type="text/javascript">
+		var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+		document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F4c0961daf4410d5fdb70bf9b0c1f661a' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+		</div>
+	</div>			
+</div>
+<div style="display:none">
+   <script src="http://s19.cnzz.com/stat.php?id=5926090&web_id=5926090" language="JavaScript"></script>
+ 
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F4c0961daf4410d5fdb70bf9b0c1f661a' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</div>
+<div class="footer_footer" >
+			<div class="footer_footer_ni">
+				<span class=>Copyright©2014 www.hfyefan.com All Rights Reserved 合肥叶凡网络科技有限公司</span>
+			</div>
+		</div>
+</div>
+
+<script>
+$(".div_begin img").load(function() {                   
+	$(this).hide();    
+	$(this).fadeIn("5000");  
+})
+
+$('.stepTab').mouseover(function(){
+	var step = $(this).attr('step');
+	$('.section').hide();
+	$('#'+step).show();
+	$('.stepTab.active').removeClass('active');
+	$(this).addClass('active');
+})
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>送餐</title>
+	        <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+		<meta http-equiv="content-type" content="text/html;charset=utf-8"></meta>
+		<meta http-equiv="refresh" content="30" />
+		<link rel="stylesheet" type="text/css" href="css/order_deliver.css"></link>
+
+		<!-- javascript脚本  -->
+		<script type="text/javascript">
+			function myFunction_clear0(){
+				input=document.getElementsByName("school_house");
+			    	input[0].value="";
+			}
+			function myFunction_clear1(){
+				input=document.getElementsByName("phone_number_deliver");
+				input[0].value="";
+			}
+			function myFunction_clear2(){
+				input=document.getElementsByName("qq_mail_deliver");
+				input[0].value="";
+			}
+		</script>
+	</head>
+	<body>
+		<div>
+			<h4 align="center">送&nbsp;&nbsp;餐</h4>
+				<form action="./response/deliver_response.php" method="post">
+						<p>
+							<div>&nbsp;</div>
+							<span>送餐地址：</span><br />
+
+							<select name="school">	<!--  12个字节  -->
+								<option>----请选择----</option>
+								<option selected>西安理工大学</option>
+							</select>
+
+							<select name="school_area">	<!--  8个字节 -->
+								<option>----请选择----</option>
+								<option selected>金花校区</option>
+							</select>
+
+							<select name="building">	<!--  4个字节 -->
+								<option>----请选择----</option>
+								<option>西六</option>
+								<option>西七</option>
+							</select>
+							
+							<input type="text" class="clear" value="231" readonly name="building_house" />
+
+							<div>&nbsp;</div>
+							<span>点餐信息：</span>&nbsp;&nbsp;<span><a href="http://www.dcb.koedou.com/page/class.html">（查看品类）</a></span><br />
+
+							<select name="hall">
+                                                                <option>----餐&nbsp;&nbsp;厅----</option>
+                                                                <option>一楼餐厅</option>
+                                                                <option>二楼餐厅</option>
+                                                                <option>民族餐厅</option>
+
+                                                        </select>
+
+							<select name="kitchen">		<!--  12个字节  -->
+								<option>----档&nbsp;&nbsp;口----</option>
+								<option>王大娘</option>
+								<option>驴提子面</option>
+								<option>川湘人家</option>
+							</select>
+
+							<select name="dish">		<!--  12个字节  -->
+								<option>----品&nbsp;&nbsp;类----<option>
+								<option>干拌</option>
+								<option>西红柿鸡蛋面</option>
+								<option>油泼面</option>
+								<option>杂酱面</option>
+								<option></option>
+							</select>
+
+							<select name="dish_size">	<!--  4个字节  -->
+								<option>----大/小----</option>
+								<option>大份</option>
+								<option>小份</option>
+							</select>
+
+							<div>&nbsp;</div>  <!-- 空一行 -->
+                                                        <span>联系方式：</span><br />
+
+							<!--  11个字节  -->
+                                                        <input type="text" class="clear" name="phone_number_deliver" id="" maxlength="11" value="手机号码：" onclick="myFunction_clear1()" />
+
+							<!--  20个字节  -->
+                                                        <input type="text" class="clear" name="qq_mail_deliver" id="" maxlength="30" value="QQ邮箱："onclick="myFunction_clear2()">
+
+							<div>&nbsp;</div>	
+							<span>应收金额:</span><br />
+							<!-- 2个字节 -->
+							<input type="text" class="price" value="0" readonly name="price" />
+                                                        <input type="text" class="price_unit" value="元（餐费）" readonly>
+
+							<!-- 2个字节 -->
+                                                        <input type="text" class="price" value="10" name="tip">
+                                                        <input type="text" class="tip_unit"  value="角（小费）" readonly>
+
+							<div>&nbsp;</div>
+							<div>&nbsp;</div>
+							<div align="center">
+								<input type="reset"  class="jump_button" value="重新填写"/>
+								<input type="submit"  class="jump_button" value="接收订单"/>
+							</div>
+						</p>
+				</form>
+		</div>
+		<div class="footer">
+			<span><p>免责声明：顺风餐仅提供信息服务，不参与餐品递送。</p></span>
+			<div>&nbsp;</div>
+		</div>
+
+	</body>
+</html>

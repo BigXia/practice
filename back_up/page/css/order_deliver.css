@@ -1,0 +1,98 @@
+body{
+	background-color:#fbf9fe;
+}
+
+select{
+	width:49.32%;
+	height:0.37in;
+	font-size:0.15in;
+	background-color:#fff8dc;
+}
+
+span{
+	font-size:0.14in;
+	color:gray;
+}
+
+input{
+	font-size:0.15in;
+}
+
+/*
+a:active{
+	color:red;
+	position:relative;
+	top:0.03in;
+	left:0.03in;
+}
+*/
+
+.clear{
+	width:47.97%;
+	height:0.32in;
+//	background-color:#f4f4f4;
+	border-width:1px;
+	border-color:#ddddcc;
+}
+
+.space{
+	height:0.05in;
+}
+
+.price{
+	width:20.00%;
+	height:0.32in;
+//	background-color:#f8f8f8;
+	border-width:1px;
+	border-color:#ddddcc;
+}
+.price_unit{
+	width:26.0%;
+	height:0.32in;
+//	background-color:#f8f8f8;
+	border-width:1px;
+	text-align:center;
+	border-color:#ddddcc;
+}
+
+.tip_unit{
+        width:26.0%;
+        height:0.32in;
+//	background-color:#fafafa;
+	border-width:1px;
+	border-color:#ddddcc;
+	text-align:center;
+	
+}
+.tip{
+	width:21.0%;
+	height:0.37in;
+	font-size:0.15in;
+	background-color:#fff8dc;
+}
+
+.jump_button{
+	width:30%;
+	height:0.34in;
+	background-color:#ff6666;
+	border-width:0.028in;
+	border-color:#ff9999;
+	font-size:0.16in;
+	color:#444444;
+}
+.price_button{
+	width:48.6%;
+	height:0.36in;
+	background-color:#ffaaaa;
+	border-color:#ffcccc;
+//	border-right-color:#eeeeee;
+	border-width:0.032in;
+	position:relative;
+	top:-0.019in;
+}
+
+.footer{
+	position:relative;
+	top:0.5in;
+}
+

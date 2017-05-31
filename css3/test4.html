@@ -1,0 +1,71 @@
+<!doctype html>
+<meta charset=utf-8>
+<meta http-equiv="refresh" content="3">
+
+<style>
+	:root {
+		background-color:yellow;
+	}
+
+	p:first-letter {
+		color:red;
+		font-size:1cm;
+		
+	}
+
+	p:before{
+		content:"Hello world!";
+	}
+
+	p:after{
+		content:"About after";
+	}
+
+	li:not(.two) {
+		color:red;
+	}
+
+	li:empty {
+		display:none;
+	}
+
+	:target {
+		background-color:green;
+	}
+</style>
+
+<a href="http://www.baidu.com" target="_blank">百度</a><br>
+<a href="#one">one</a><br>
+<a href="#two">two</a><br>
+
+<p>
+	aaaaaaaaaaaaaa<br>
+	bbbbbbbbbbbbb<br>
+	ccccccccccccc<br>
+</p>
+
+<ul>
+	<li>aaaaaaaaaaaaaaaa</li>
+	<li class="two">aaaaaaaaaaaaaaaa</li>
+	<li>aaaaaaaaaaaaaaaa</li>
+	<li></li>
+	<li>aaaaaaaaaaaaaaaa</li>
+	<li>aaaaaaaaaaaaaaaa</li>
+	<li>aaaaaaaaaaaaaaaa</li>
+	<li>aaaaaaaaaaaaaaaa</li>
+</ul>
+<a name="one">
+*************<br>
+*************<br>
+*************<br>
+*************<br>
+*************<br>
+</a>
+<a name="two">
+@@@@@@@@@@@<br>
+@@@@@@@@@@@<br>
+@@@@@@@@@@@<br>
+@@@@@@@@@@@<br>
+@@@@@@@@@@@<br>
+@@@@@@@@@@@<br>
+</a>

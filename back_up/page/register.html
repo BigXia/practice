@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>注册</title>
+	        <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+		<meta http-equiv="content-type" content="text/html;charset=utf-8"></meta>
+		<meta http-equiv="refresh" content="300" />
+		<link rel="stylesheet" type="text/css" href="css/order_deliver.css"></link>
+
+		<!-- javascript脚本  -->
+		<script type="text/javascript">
+			function myFunction_clear0(){
+				input=document.getElementsByName("building_house");
+			    	input[0].value="";
+			}
+			function myFunction_clear1(){
+				input=document.getElementsByName("phone_number");
+				input[0].value="";
+			}
+			function myFunction_clear2(){
+				input=document.getElementsByName("qq_mail");
+				input[0].value="";
+			}
+			function myFunction_clear3(){
+                                input=document.getElementsByName("password");
+                                input[0].value="";
+                        }
+			function myFunction_valid(){
+				alert("警告!")
+			}
+		</script>
+	</head>
+	<body>
+		<div>
+			<h4 align="center">注册</h4>
+				<form action="./response/register_response.php" method="post">
+						<p>
+							<div>&nbsp;</div>  <!-- 空一行 -->
+                                                        <span>用户帐号：</span><br />
+
+							<!--  11个字节  -->
+              <input type="text" class="clear" name="phone_number" id="" maxlength="11" value="手机号码：" onclick="myFunction_clear1()" />
+
+							<!--  20个字节  -->
+                  <input type="text" class="clear" name="qq_mail" id="" maxlength="30" value="QQ邮箱：" onclick="myFunction_clear2()" />
+							<div class = "space"></div>
+							<div><span>提示：手机号码- -帐号，QQ邮箱- -找回密码</span><br /></div>
+
+							<div>&nbsp;</div>	
+							<span>用户密码：(请妥善保管)</span><br />
+							<input type="text" class="clear" value="请设置密码：" name="password" onclick="myFunction_clear3()" />
+							
+							<div>&nbsp;</div>
+
+							<span>送餐地址：(点餐时的默认地址)</span><br />
+
+                                                        <select name="school">  <!--  12个字节  -->
+                                                                <option>----请选择----</option>
+                                                                <option selected>西安理工大学</option>
+                                                        </select>
+
+                                                        <select name="school_area">     <!--  8个字节 -->
+                                                                <option>----请选择----</option>
+                                                                <option selected>金花校区</option>
+                                                        </select>
+							<div class = "space"></div>
+
+                                                        <select name="building">        <!--  4个字节 -->
+                                                                <option>----请选择----</option>
+                                                                <option>西六</option>
+                                                                <option>西七</option>
+                                                        </select>
+
+                                                        <!--  3个字节 -->
+        <input type="text" class="clear" name="building_house" id="" maxlength="3" value="宿舍门牌号：" onclick="myFunction_clear0()"/>
+
+
+							<div>&nbsp;</div>
+							<div>&nbsp;</div>
+							<div align="center">
+								<input type="reset"   class="jump_button" value="找回密码">
+							<input type="reset"   class="jump_button" value="重新填写" />
+								<input type="submit"  class="jump_button" value="一键注册" />
+							</div>
+						</p>
+				</form>
+		</div>
+		<div class="footer">
+			<span><p>免责声明：顺风餐仅提供信息服务，不参与餐品递送。</p></span>
+			<div>&nbsp;</div>
+		</div>
+
+	</body>
+</html>
+
+
+	</body>
+</html>

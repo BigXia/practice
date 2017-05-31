@@ -1,0 +1,3 @@
+<?php
+	include "cookie.php";
+	echo "ÕâÊÇÊ×Ò³";

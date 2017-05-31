@@ -1,0 +1,373 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="好吃猫成功案例，开启微信订餐，微信点餐，微信外卖，微信便利店" />
+	<title>好吃猫成功案例外卖餐厅，便利店，超市，水果店</title>
+	<script src="./resource/haochimall/jquery/jquery-1.11.0.min.js?v=1.3"></script>
+	<script src="./resource/haochimall/jquery/jquery.effects.core.js?v=1.3"></script>
+	<script src="./resource/haochimall/jquery/jquery.effects.slide.js?v=1.3"></script>
+	<link rel="stylesheet" href="./resource/haochimall/css/public.css?v=1.3">
+	<link rel="stylesheet" href="./resource/haochimall/css/version.2.0.css?v=2.2">
+	<script src="./resource/haochimall/js/imgScroll.js?v=1.3"></script>
+	<!--[if lt IE 9]> 
+	<script src="PIE/PIE.js?v=1.3"></script> 
+	<![endif]-->
+</head>
+<style>
+#page_help{
+	background: #fff;
+    position: absolute;
+    width: 100%;
+}
+
+.div_title{
+	font-size: 24px;
+	text-align: left;
+	color: #40a2eb;
+	padding: 20px 25px;
+	border-bottom: 2px solid #40a2eb;
+	
+	}
+.img_div{
+	float:left;
+	margin-top: 20px;
+	margin-left:50px;
+}	
+.label_p_div{
+	float:left;
+	width: 500px;
+	margin-top: 25px;
+	margin-left:25px;
+}
+.label_font{
+	font-size:19px;
+	float: left;
+	color:#40a2eb;
+}
+.p_font{
+	font-size: 16px;
+	text-align: left;
+	line-height: 26px;
+	color:#333;
+}
+.div_p_two{
+	margin-top:50px;
+	}
+
+.content_title{
+	margin:auto auto;
+	text-align:center;
+	width: 960px;
+	background: #fff;
+}
+.content_div{
+	height:500px;
+	width:960px;
+	text-align: center;
+	margin: auto auto;
+	background: #fff;
+}
+.content_title1{
+	margin-top: 25px;
+	font-size: 18px;
+	text-align: left;
+	font-weight: 100;	
+	margin-left:45px;
+	float:left;
+}
+
+.content_bg_top{
+	background-repeat:round;
+	height:450px;
+}
+.content_div_top_title{
+	width:960px;
+	text-align: center;
+	margin: auto auto;
+	
+}
+.img_one_aut{
+	float: left;
+	width: 390px;
+}
+.img_f_aut{
+	float: left;
+	width: 875px;
+}
+.label_p_div1{
+	float:left;
+	width: 500px;
+	margin-top:25px;
+	margin-left:20px;
+}
+.h3_title{
+	color:#fff;
+	font-size:18px;
+	font-weight:100;
+	padding-top:25px;
+}
+.h3_title1{
+	color:#40a2eb;
+	font-size:18px;
+	font-weight:100;
+	padding-top:25px;
+}
+.suc_span_bor{
+	text-align: left;
+	float:left;
+}
+.span_suc{
+	font-size: 16px;
+	color: #f5ad22;
+	float:left;
+	padding-top: 4px;
+	width: 200px;
+}
+.sub_bor_div{
+	width: 750px;
+	float: left;
+	height: 16px;
+	border-bottom: 1px solid #40a2eb;
+}
+.content_back{
+	margin:auto auto;
+}
+.content_h3_title{
+	font-size: 18px;
+	text-align: left;
+	font-weight: 100;	
+	margin-left:15px;
+	float:left;
+	margin-bottom:30px;
+}
+.img_div1{
+	float:left;
+	margin-top: 20px;
+	margin-left:70px;
+}
+.sub_bor_div2{
+	width: 960px;
+	float: left;
+	height: 16px;
+	border-bottom: 1px solid #40a2eb;
+	margin-bottom: 50px;
+}
+.label_p_div2{
+	float:left;
+	width: 500px;
+	margin-top:25px;
+	margin-left:60px;
+}
+.footer_footer{
+    bottom: 0px;
+    margin-bottom: -50px;
+}
+</style>
+<body>
+	<div id="page_help">
+		<div id="header">
+	<div class="header">
+		<div id="logo"><a href=""><img src="./resource/haochimall/images/logo4.png?v=1.3" alt="好吃猫"></a></div>
+		<div id="nav">
+			<ul>
+				<li id="index"><a href="/">首页</a></li>
+				<li id="indetail"><a href="indetail.html">了解详情</a></li>
+				<li id="case"><a href="case.html">成功案例</a></li>
+				<li id="help"><a href="help.html">新手帮助</a></li>
+				<li id="loginAct" style="padding-right: 0px;padding-left: 10px;"><span class="freeTrial_login">登录</span></li>
+				<li id="freeTrial" style="padding-left: 10px;padding-right: 5px;"><span class="freeTrial">免费注册</span></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<script>
+$('.freeTrial').click(function(){
+	window.location.href = '/member.php?act=login';
+});
+$('#loginAct').click(function(){
+	window.location.href = 'member.php?act=register';
+});
+$(function(){
+	var page = $(document.location.href.split('/')).last();
+	$('#'+page[0]).addClass('actived');
+	if(page[0]=="index#login"){
+	$('#index').addClass('actived');
+	}
+});
+
+</script>
+			<div class="page_back">
+	<div class="content_title">
+	<div class="div_title">
+		<label>成功案例</label>
+	</div></div>
+	
+	<div class="content_back">
+	<div class="content_bg_top">
+	<div class="content_div_top_title">
+	<div class="content_title1" >
+				<h3 class="h3_title1">美汇通便利店</h3>
+		<p class="p_font">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</br>深圳老板阿杰是个80后，是好吃猫商户中的黑马，采用迅猛的推广策略，制作<font color="red">巨幅海报</font>放在店里面以及小区显眼处，在深圳玉<br>龙小区引起了一阵轰动，微信便利店开店不到一个月，借
+				着世界杯的东风，每天通过微信便利店的流水过千，不仅让人感慨，<font color="red"><br>做生意，最怕就是做到极致</font>。</p>
+				<img class="img_f_aut" src="./resource/haochimall/images/meihuitong.png" width="875px;"/>
+			</div>
+			
+	<div class="label_p_div1">
+				
+				
+			</div>
+	</div>
+	</div>
+</div>
+	<div class="content_div_top_title">
+	<div class="suc_span_bor">
+	<span class="span_suc">Successful cases</span><div class="sub_bor_div"></div>
+	</div>
+	</div>
+	
+	<div class="content_back">
+	<div class="content_bg_top">
+	<div class="content_div_top_title">
+	<div class="content_title1" >
+				<h3 class="h3_title1">达拉香</h3>
+				<h3 class="h3_title1">（微信号：DDLLXX67）</h3>
+				<img class="img_one_aut" src="./resource/haochimall/images/img1.png?v=2.1" />
+			</div>
+			
+	<div class="label_p_div1">
+				<p class="p_font">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#40a2eb">达拉香</span>老板刘师傅开的店在朝阳区双营路一个稍显偏僻的地方，平时生意以外卖为主，网上营销基本上是依赖于一些网络平台，例如“饿了么”、“美团外卖”等。但刘师傅坦言，“饿了么”和“美团”虽然能带来订单，但是订单来的快去的也快。</span></p>
+				<p class="p_font">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;根本原因在于网络平台仅仅是一个平台，终归不是自己的品牌，用户始终受制于人。用户聚集在了美团网站上，成为美团的忠实粉丝，而对他的“达拉香”品牌没有任何依赖，用户并没有转化成“达拉香”的固定粉丝。 饿了么、美团搞活动打折，订单是来了，但要是用户没留住，还须继续打折，最后算下来没啥利润。</p>
+				<p class="p_font">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;痛定思痛，刘师傅决定寻找机会以转变方式。终于在5月份，刘师傅决定和“好吃猫”合作。和“好吃猫”接触后，刘师傅意识到微信公众号的巨大价值，于是他毫不犹豫的在店门口架起了易拉宝，同时打印了1万份印有微信二微码的传单，并打出了“爱世界杯,爱美食”的口号。在经过20多天的宣传之后，每天微信带来的订单流水已经接近1000元。</p>
+			</div>
+	</div>
+	</div>
+</div>
+<div class="content_div_top_title">
+	<div class="suc_span_bor">
+	<span class="span_suc">Successful cases</span><div class="sub_bor_div"></div>
+	</div>
+	</div>
+<div class="content_back">
+
+<div class="content_div">
+		<div class="label_p_div">
+		<div class="content_h3_title" style="float:none;margin-top:20px;">
+				<h3 class="h3_title1">家佰便利店</h3>
+				<h3 class="h3_title1">（微信号：家佰便利店）</h3>
+			</div>
+			<p class="p_font" style="margin-top:40px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#40a2eb">家佰便利店</span>是位于北苑的一个社区便利店，是由一对年轻的80后夫妇经营的。它主要服务北苑地区美立方、鑫兆丽园两个小区，附近的居民主要以年轻上班族为主，经济实力强，购买力也强。小店主营零食，饮品，水果，蔬菜，日用百货，桶装水等上千种物品。</p>
+			<p class="p_font">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在未使用“好吃猫”微信店铺服务前，生意也算不错，但自从“家佰便利店”的微信公众号推出后，销量大开，在小区还引发了一阵不小的轰动。小区居民对通过微信购物这种方式，甚是新奇，惊呼居然可以通过微信在便利店下单，简单又便捷。相信在炎炎夏日，大家在家中可以充分享受便捷购物带来的乐趣。</p>
+		</div>
+		<div class="img_div">
+		<img src = "./resource/haochimall/images/img2.png?v=2.6"/>
+		</div>
+</div>
+</div>
+<div class="content_div_top_title">
+	<div class="suc_span_bor">
+	<span class="span_suc">Successful cases</span><div class="sub_bor_div"></div>
+	</div>
+	</div>
+<div class="content_back">
+<div class="content_div">
+		<div class="img_div1">
+		<img src="./resource/haochimall/images/img3.png?v=2.6" width="300px;" />
+		</div>
+		<div class="content_title1" style="margin-left:80px;">
+				<h3 class="h3_title1">零生活</h3>
+				<h3 class="h3_title1">（微信号：零生活之北体生活）</h3>
+			</div>
+		<div class="label_p_div2">
+		<p class="p_font">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;北京海淀，太平洋吹来暖湿的季风，学霸正在疯长，又到了大学生们最忙碌的季节——考试季。北京体育大学的小陈开的校园小卖铺，在短短的半个月内，迅速风靡体大校园。
+    </p>
+		<p class="p_font">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;核心产品美味方便面是他的招牌产品，它抓住大学生的刚需，迅速占领了体大各个宿舍。众所周知，校园生活以“宅”为主，小陈通过发放印有微信二微码的名片，在学校食堂前面摆易拉宝等各种手段，聚拢了大批粉丝。仅仅半个月，便吸引了接近500个粉丝。截至目前，店铺每天的流水已达到600元左右。</p>
+		<p class="p_font">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;灵活又踏实的小张，甚至在微信外卖宣传的过程中，摆脱了单身，结识了生命中的另一半，实现了从校园单身屌丝宅男到“校园小商人”的华丽转身!</p>
+</div>
+</div>
+
+</div>
+<div class="content_div_top_title">
+	<div class="suc_span_bor">
+	<div class="sub_bor_div2"></div>
+	</div>
+	</div>
+    </div>
+		<div id="footer">
+	<div class="footer">
+		
+		<div class="footer_left">
+			<div >
+			<img class="footer_qecode" width="200px" src="./resource/haochimall/images/qrcode.jpg?v=1.3"/>
+			</div>
+			<div class="lab_footer">
+			<label >轻松一扫体验好吃猫</label>
+			</div>
+		</div>
+		<div class="footer_right">
+			<dl>
+				<dt>联系我们</dt>
+				<dd>合肥叶凡网络科技有限公司</dd>
+				<dd>电话：400-0551-422</dd>
+				<dd>传真：0551-65867402</dd>
+				<dd>地址：安徽省合肥市蜀山区黄山路588号</dd>
+                </dl>
+		</div>
+		<div class="footer_right">
+			<dl>
+				<dt>客服</dt>
+				<dd>客服-天晴<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=980642339&site=qq&menu=yes"><img style="margin-left: 12px;vertical-align: middle;"  src="./resource/haochimall/images/button_qq.gif" alt="点击这里给我发消息" title="点击这里给我发消息"/></a></dd>
+				<dd> </dd>
+				</dl>
+		</div>
+	
+		<iframe name="in" style="width:1px;height:1px" class="hide"></iframe>
+		<div class="hm_baidu" style="display:none">
+		<script type="text/javascript">
+		var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+		document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F4c0961daf4410d5fdb70bf9b0c1f661a' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+		</div>
+	</div>			
+</div>
+<div style="display:none">
+   <script src="http://s19.cnzz.com/stat.php?id=5926090&web_id=5926090" language="JavaScript"></script>
+ 
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F4c0961daf4410d5fdb70bf9b0c1f661a' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</div>
+<div class="footer_footer" >
+			<div class="footer_footer_ni">
+				<span class=>Copyright©2015 www.hfyefan.com All Rights Reserved 合肥叶凡网络科技有限公司</span>
+			</div>
+		</div>
+	</div>
+<script>
+	$('#loginAct').click(function(){
+		window.location.href = 'member.php?act=login';
+	});
+	$('.freeTrial').click(function(){
+		window.location.href = 'member.php?act=register';
+	});	
+	$('#trial').click(function(){
+		window.location.href = 'member.php?act=register';
+	});
+	$('#reg').click(function(){
+		window.location.href = 'member.php?act=register';
+	});
+	$('#title_case').click(function(){
+		window.location.href = '/site/case';
+	});
+</script>
+
+<div style="display:none">
+   
+ </div>
+
+</body>
+</html>

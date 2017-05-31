@@ -1,0 +1,27 @@
+<script>
+
+	var arr=new Array("a","b","c");
+//	alert(arr[0]);
+
+	var arr=[1,5,3,4,2,9,8,7];
+
+	arr.unshift("www");
+
+	arr.shift();
+
+	arr.join("-");
+
+	arr.push("www<br>");
+	for(var i=0;i<arr.length;i++){
+		document.write(arr[i]+"<br>");
+	}
+
+	arr.sort();
+	document.write(arr);
+
+	document.write(arr.length);
+
+	var colors=["red","blue","yellow","green","#ff00ff"];
+
+	document.bgColor=colors[Math.floor(Math.random()*colors.length)];
+</script>

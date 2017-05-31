@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+	<script src="../ajax3.0.js"></script>
+	<script>
+		document.write(new Date()+"<br>");
+		document.write(new Date()+"<br>");
+		document.write(new Date()+"<br>");
+		document.write(new Date()+"<br>");
+		document.write(new Date()+"<br>");
+		document.write(new Date()+"<br>");
+	</script>
+	<script>
+
+		function receive(){
+			var rdata=document.getElementById("demo");
+			Ajax().get("./rec.php",function(data){
+				rdata.innerHTML=data;
+			});
+		}
+
+		receive();
+
+		setInterval(function(){
+			receive();
+		},3000);
+	
+		function send(){
+			var titobj=document.frm.title;
+			var conobj=document.frm.content;
+			
+		//	alert(conobj.value);
+			Ajax().post("./server.php",{title:titobj.value,content:conobj.value});
+			
+			titobj.value="";
+			conobj.value="";
+		}
+
+	</script>
+	</head>
+	<body>
+		<div id="demo" style="background:yellow" onclick="receive()">aaa</div>
+		<form name="frm">
+			标题:<input type="text" name="title"><br>
+			内容:<textarea rows="3" cols="30" name="content"></textarea><br><br>
+			<input type="button" onclick="send()" value="发表评论"><br>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,57 @@
+#header{background:#fff;border: 1px solid #f2f2f2;}
+.header{width:960px;height:70px;line-height:60px;position:relative;margin:0 auto;background:#fff;}
+#logo{position:absolute;left:5px;top:16px}
+#nav{position:absolute;right:0;height:100%}
+#nav ul{float:right}
+#nav ul li{float:left;padding:0 20px;font-size:1.6em}
+#nav ul li a{color:#000}
+#nav ul li a:hover{color:#24b0cf}
+#nav ul li a.username{color:#24b0cf;padding:3px 5px;}
+#nav ul li a.username:hover{color:#fff;background:#24b0cf;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;behavior: url(/PIE/PIE.htc);}
+#nav #loginAct{font-size:1.6em;color:#24b0cf;cursor:pointer}
+#nav #freeTrial span{padding:8px 17px;background:#24b0cf;color:#fff;cursor:pointer;-moz-border-radius: 5px;-webkit-border-radius: 5px;border-radius: 5px;line-height: 16px;}
+#nav .actived{border-bottom:2px solid #28d2e6}
+#nav #loginAct .freeTrial_login{padding: 8px 17px;
+background: #80AABB;
+color: #fff;
+cursor: pointer;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+line-height: 16px;}
+#footer{}
+.footer{width:960px;height:200px;margin:0 auto;padding:50px 0 90px 0;text-align:left;}
+.footer .qrcode img{width:105px}
+.footer  dl{font-size:16px;float:left;margin-left:50px;border-left: #E0E0E0 solid 1px;padding-left:40px;height:180px;padding-top: 20px;}
+.footer  dt{font-size:16px;font-weight:bolder;line-height:35px}
+.footer  dd{line-height:36px}
+.footer  dd a{color:#000}
+.footer_qecode{
+	border: #c7c7c7 solid 5px;
+	}
+.footer_left{
+	float:left;
+}
+.img_weibo{
+width: 30px;
+vertical-align: middle;
+}
+.footer_right{
+	float:left;
+}
+.footer_footer{
+	margin: auto auto;
+width: 100%;
+position: absolute;
+background:#d0d0d0;
+height: 50px;
+line-height: 50px;	
+}
+.footer_footer_ni{
+	color:#626262;
+	font-size:14px;
+	text-align: center;
+}
+.lab_footer{
+	font-size:16px;font-weight:bolder;line-height:35px;margin-left: 35px;
+}

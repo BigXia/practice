@@ -1,0 +1,51 @@
+<!doctype html>
+<meta charset=utf-8>
+<meta http-equiv="refresh" content="3">
+
+<style>
+	[title='']{
+		color:red;
+		font-size:3cm;
+	}
+
+	div[align=center]{
+		color:blue;
+		font-size:1cm;
+	}
+
+	p[class~=two]{
+		color:yellow;
+//		font-size:1cm;
+	}
+
+	h2[lang|=zh]{
+		color:red;
+		font-size:1cm;
+	}
+
+	p[title|=this]{
+		color:yellow;
+		font-size:2cm;
+	}
+
+	p[title^=this]{
+		color:red;
+		font-size:3cm;
+	}
+
+	p[title*=is]{
+		color:blue;
+		font-size:2cm;
+	}
+</style>
+
+<p title="this-is-a-test">this is a test</p>
+<a href="http://www.baidu.com">百度</a><br>
+
+<p class="one two three">aaaaaaaaaaaaaa</p>
+<p>aaaaaaaaaaaaaa</p>
+<p>aaaaaaaaaaaaaa</p>
+
+<div align="center">bbbbbbbbbbbbbb</div>
+
+<h2 lang="zh-en">hello</h2>

@@ -1,0 +1,15 @@
+#deal_header {
+	width:100%;
+	//	height:1in;
+	//	background-color:yellow;
+	padding-left:20%;
+}
+.deal_header_col {
+	width:30%;
+	height:0.30in;
+	background-color:yellow;
+	text-align:center;
+	margin-top:0.15in;
+	padding-top:0.10in;
+	float:left;
+}

@@ -1,0 +1,22 @@
+<script>
+	var names=["a","b","c"];
+
+	// alert(names[0]);
+
+	var tems=["abc",10,12,34,true];
+
+	// alert(tems[4]);
+
+	var arrs=[
+		["a","b","c"],
+		["aa","bb","cc"],
+		["aaa","bbb","ccc"]
+
+	];
+	alert(arrs[2][0]);
+
+
+
+	
+	
+</script>

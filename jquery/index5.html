@@ -1,0 +1,27 @@
+<html>
+<head>
+	<meta charset="utf-8" />
+	<script src="./jquery/jquery.js"></script>
+	<script>
+		$(function(){
+			$("#p1").css("background","red");
+		//	alert("Hello!");
+		
+			$("#p1").css({color:"white"});
+
+			var s = $("#p1").css("color");
+			alert(s);
+
+			$("#p1").height(200);
+			$("#p1").width(500);
+		});
+
+	</script>
+	
+</head>
+<body>
+	<p id="p1">
+		This is a test!
+	</p>
+</body>
+</html>

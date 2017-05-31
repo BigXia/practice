@@ -1,0 +1,56 @@
+/* public */
+html {}
+body {margin:0;padding:0;color:#000;text-align:center;font-size:62.5%}
+body,div,table,td,tr,th{font-family:"Microsoft Yahei",Verdana,Arial,Helvetica,sans-serif}
+div,p,form,img,ul,ol,li,dl,dt,dd {margin:0;padding:0;border:0}
+h1,h2,h3,h4,h5,h6 {margin:0;padding:0}
+body>div {text-align:center;margin-right:auto;margin-left:auto}
+input,select,textarea{font-size:1.2em;vertical-align:middle}
+input{padding-top:0}
+input,button,select,textarea{outline:none}
+textarea{resize:none}
+input[type=button]{-webkit-appearance:none;outline:none}
+ul{list-style-type:none}
+a{text-decoration:none}
+.fB {font-weight:bold}
+.fI {font-style:italic}
+.f12{font-size:1.2em}
+.f14{font-size:1.4em}
+.f16{font-size:1.6em}
+.f18{font-size:1.8em}
+.f20{font-size:2em}
+.f22{font-size:2.2em}
+.f24{font-size:2.4em}
+.f26{font-size:2.6em}
+.f28{font-size:2.8em}
+.f30{font-size:3em}
+.f32{font-size:3.2em}
+.cB7{color:#b7b7b7}
+.cB8{color:#b8b8b8}
+.c76{color:#767676}
+.c7{color:#777}
+.c79{color:#797979}
+.cOrange{color:#f9c470}
+.cGreen{color:#32968a}
+.cRed{color:#f00}
+.cBlack{color:#000}
+.cGold{color:#f5ad22}
+.bOrange{background:#f9c470}
+.bGray{background:#e2e4e4}
+.bAshy{background:#b2b9b8}
+.bGreen{background:#33c2ae}
+.bBlue{background:#2abbfc}
+.bGold{background:#f5ad22}
+.bBack{background:#edf3f3}
+.left{float:left}
+.right{float:right}
+.clear{margin:0 auto;clear:both;font-size:1px;width:1px;visibility:hidden;}
+.hide {display:none}
+.tLeft{text-align:left}
+.tRight{text-align:right}
+.tCenter{text-align:center}
+.w100pct{width:100%}
+.w90pct{width:90%}
+.w60pct{width:60%}
+.w50pct{width:50%}
+.w40pct{width:40%}

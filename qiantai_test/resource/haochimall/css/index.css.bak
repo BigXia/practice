@@ -1,0 +1,68 @@
+@font-face {
+ font-family: 'HanYi';
+ src:url('/fonts/HanYi.TTF');
+}
+body{background:#fff}
+#page{background:#f3f3f3;}
+#banner{position:relative;height:473px}
+#banner4{position:absolute;top:0;left:0;z-index:8;height:473px;width:100%;background:url('../images/zgd_banner.png') no-repeat center center;background-size:cover;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/official/index2/zgd_banner.png', sizingMethod='scale');}
+.bannerContent{width:960px;margin:0 auto;position:relative}
+#bannerContent1 #video{position:absolute;right:25px;top:75px}
+#bannerContent1 dl{width:445px;position:absolute;left:17px;top:85px;color:#fff;text-align:left}
+#bannerContent1 dl dt{font-size:3.6em;font-family:'HanYi';font-weight:bolder}
+.h2_title{font-size:3.6em;font-family:'HanYi';font-weight:bolder}
+#bannerContent1 dl #desc{font-size:2.4em;margin-top:40px}
+#bannerContent1 dl #trial{font-size:1.8em;margin-top:85px;}
+#bannerContent1 dl #trial p{background:#a5d103;cursor:pointer;width:272px;height:64px;line-height:64px;text-align:center}
+#bannerContent1 #phone1{position:absolute;right:250px;top:74px;}
+#content{}
+.contentDiv.white{background:white}
+.contentDiv .content{width:960px;margin:0 auto}
+#content .content{position:relative;height:600px}
+.leftPart,.rightPart{position:absolute}
+#content1{padding-bottom:40px}
+#content1 .leftPart{left:5px;top:85px}
+#content1 .rightPart{right:0;top:30px}
+#content1 .rightPart .words{width:750px;text-align:left}
+#content1 .rightPart .words li.style1{text-indent:90px;font-size:3.6em;color:#f06e0c}
+#content1 .rightPart .words li.style1 num{font-size:50px}
+#content1 .rightPart .words button{font-size:3em;border:none;color:#fff;background:#ffb636;padding:20px 45px;margin-left:110px;-moz-border-radius:5px;-webkit-border-radius:5px;cursor: pointer;border-radius:5px;behavior:url(/PIE/PIE.htc);}
+#content1 .rightPart .words li.style2{margin:50px 0}
+#content1 .rightPart .words li.style3{font-size:2.4em;line-height:30px;color:#6b6b6b;position:relative;}
+.quote1{width:16px;height:23px;background:url('../images/official/index2/zgd_quote1.png') no-repeat top left;position:absolute;left:0;top:3px}
+.quote2{width:15px;height:23px;background:url('../images/official/index2/zgd_quote2.png') no-repeat top left;position:absolute;right:40px;top:3px}
+
+#content1 .rightPart #case{width:750px;text-align:left;margin-top:95px}
+#content1 .rightPart #case ul{width:40%;float:left;position:relative;margin-left: 5%;}
+#content1 .rightPart #case ul li{float:left}
+#content1 .rightPart #case ul li.case_logo{width:75px;margin-right:18px;}
+#content1 .rightPart #case ul li.case_logo:hover blockquote{display:inline}
+#content1 .rightPart #case ul li.case_name{width:130px;font-size:20px;font-weight:bolder;margin-top:18px;color:#333}
+#content1 .rightPart #case ul li.case_address{width:130px;font-size:18px}
+blockquote.style1{background:url('../images/official/index2/zgd_quote1.png') no-repeat top left;text-indent:40px;margin:5px 30px 5px 5px}
+blockquote.style1 h4{display:block;background:url('../images/official/index2/zgd_quote2.png') no-repeat top right}
+blockquote.style2{position:absolute;margin:0;top:-27px;left:92px;border:2px solid #f6e2be;height:120px;display:none}
+blockquote.style2 img{width:120px}
+blockquote.style2 span{width:0;height:0;font-size:0;overflow:hidden;position:absolute}
+blockquote.style2 span.bot{border-width:20px;border-style:solid dashed dashed;border-color:transparent #f6e2be transparent transparent;left:-40px;bottom:40px}
+blockquote.style2 span.top{border-width:20px;border-style:solid dashed dashed;border-color:transparent #ffffff transparent transparent;left:-37px;bottom:40px}
+#content2{padding-bottom:40px}
+#content2 .leftPart{left:0;top:70px;text-align:left}
+#content2 .rightPart{right:0px;top:165px}
+#content2 .leftPart h2{color:#ff4d4e;font-size:3.6em;text-indent:0.5em}
+#content2 .leftPart .sofast{font-size:2em;line-height:120px}
+#content2 .leftPart .equation{height:168px;width:730px;position:relative}
+.hexagon1,.hexagon2,.plus1,.plus2,.equal{position:absolute}
+.hexagon1,.hexagon2{width:144px;height:167px;color:#fff;font-size:26px;line-height:165px;text-align:center;display:inline-block}
+.plus1,.plus2,.equal{width:32px;height:32px;display:inline-block}
+.hexagon1{background:url('../images/official/index2/zgd_hexagon1.png') no-repeat center;}
+.hexagon2{background:url('../images/official/index2/zgd_hexagon2.png') no-repeat center;}
+.plus1{background:url('../images/official/index2/zgd_plus1.png') no-repeat center;}
+.plus2{background:url('../images/official/index2/zgd_plus2.png') no-repeat center;}
+.equal{background:url('../images/official/index2/zgd_equal.png') no-repeat center;}
+#content2 .leftPart button{font-size:3em;border:none;color:#fff;background:#f87069;padding:30px 40px;margin-left:291px;margin-top:80px;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;behavior:url(/PIE/PIE.htc);cursor:pointer}
+.btn_and_ios{position: absolute;right: 45px;top: 235px;}
+.a_android{display: block;width: 150px;height: 50px;background: url(/images/official/android1.png) no-repeat 4px center;border: 2px solid #fff;margin-top: 30px;color:#fff;font-size:16px;line-height: 50px;text-indent: 2.2em;}
+.a_ios{display: block;width: 150px;height: 50px;background: url(/images/official/ios1.png) no-repeat 4px center;border: 2px solid #fff;color:#fff;font-size:16px;line-height: 50px;text-indent: 2em;margin-top: 25px;}
+.hm_baidu{position: absolute;}
+.h2_title{font-size:3.6em;font-family:'HanYi';font-weight:bolder}

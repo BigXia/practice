@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+
+<script src="ajax3.0.js"></script>
+<script>
+	document.write(new Date()+"<br>");
+	document.write(new Date()+"<br>");
+	document.write(new Date()+"<br>");
+</script>
+
+<script>
+
+	function receive(){
+		var rdata=document.getElementById("rdata");
+
+		Ajax().get("rev.php",function(data){
+			rdata.innerHTML=data;
+
+
+		});
+	}	
+
+	receive();	
+
+	setInterval(function(){
+		receive();
+	},3000);
+
+
+	//使用Ajax发过去
+	function send(){
+		var titobj=document.frm.title;
+		var conobj=document.frm.content;
+
+Ajax().post("./server.php", {title:titobj.value, content:conobj.value},function(data){alert.write(data)});
+
+		titobj.value="";
+		conobj.value="";
+	}
+</script>
+
+	</head>
+
+<body>
+<div id="rdata" name="rdata" style="background:yellow">aaaaaaaaaa</div>
+	<form name='frm'>
+		标题:<input type="text" name="title" vlaue=""><br><br>
+		内容:<textarea rows="3" cols="30" name="content">
+		</textarea><br>
+		<input type="button" onclick="send()" value="发表评论">
+	</form>
+<div id="test"></div>
+</body>

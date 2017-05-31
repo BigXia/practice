@@ -1,0 +1,28 @@
+<html>
+<head>
+	<meta charset="utf-8" />
+	<script type="text/javascript" src="./jquery/jquery.js"></script>
+	<script >
+		$(function(){
+			var objs = $("div[class^='one_']").children();
+
+//			alert(obj.length);
+
+			for(var i=0; i<objs.length; ++i){
+				objs.text('test1'); 
+			}
+		});
+	</script>
+<head>
+<body>
+	<div class='one_first'>
+		<div class='two_first'>
+			test
+		</div>
+		<div class='two_second'>
+		</div>
+		<div class='two_third'>
+		</div>
+	</div>
+</body>
+</html>

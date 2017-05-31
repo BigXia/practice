@@ -1,0 +1,41 @@
+body {
+	margin:0;
+
+}
+
+#order_search {
+        height:0.6in;
+}
+
+.order_sort {
+        height:0.5in;
+        text-align:center;
+}
+
+
+
+
+.order_dish {
+	height:0.85in;
+	background-color:yellow;
+	
+}
+
+.order_img {
+	height:0.62in;
+	width:0.62in;
+	background-color:red;
+	margin:0.11in 0.1in;
+	float:left;
+}
+
+.order_desc {
+	padding-top:0.1in;
+}
+
+.order_space {
+	height:0.02in;
+	width:100%;
+	background-color:#dddddd;
+	float:left;
+}

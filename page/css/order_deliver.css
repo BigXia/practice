@@ -1,0 +1,135 @@
+#menu {
+	float:left;
+	background-color:yellow;
+	width:100%;
+	height:0.5in;
+	position:fixed;
+	bottom:0.01in;
+}
+
+td {
+	text-align:center;
+	width:1in;
+}
+
+body{
+	background-color:#fbf9fe;
+	margin:0px;
+}
+
+
+select{
+	width:49.75%;
+	height:0.37in;
+	font-size:0.15in;
+	background-color:#fff8dc;
+}
+.select{
+	width:49.41%;
+	height:0.37in;
+        font-size:0.17in;
+        background-color:#fff8dc;
+}
+
+span{
+	font-size:0.14in;
+	color:gray;
+	width:40%;
+}
+
+input{
+	font-size:0.17in;
+}
+
+.clear{
+	width:47.97%;
+	height:0.32in;
+	border-width:1px;
+	border-color:#ddddcc;
+}
+
+.header{
+	width:100%;
+	height:1in;
+}
+
+.space{
+	height:0.03in;
+}
+
+.price_tip_unit{
+        width:26.0%;
+        height:0.32in;
+	border-width:1px;
+	border-color:#ddddcc;
+	text-align:center;
+	
+}
+.price_tip{
+	width:21.0%;
+	height:0.37in;
+	font-size:0.15in;
+	background-color:#fff8dc;
+}
+
+.jump_button{
+	width:30%;
+	height:0.34in;
+	background-color:#ff6666;
+	border-width:0.028in;
+	border-color:#ff9999;
+	font-size:0.16in;
+	color:#444444;
+}
+.price_button{
+	width:48.6%;
+	height:0.36in;
+	background-color:#ffaaaa;
+	border-color:#ffcccc;
+	border-width:0.032in;
+	position:relative;
+	top:-0.019in;
+}
+
+.footer{
+	position:relative;
+	top:1.2in;
+}
+.order_Hint{
+        width:100%;
+        height:2in;
+        background-color:yellow;
+	overflow:scroll;
+	position:relative;
+	top:-0.16in;
+	text-indent:0.2in;
+}
+
+.half{
+	width:50%;
+//	background-color:yellow;
+	float:left;
+}
+
+input[type=checkbox] {
+	opacity: 0;
+    position: absolute;
+    z-index: -1;
+//  	visibility: hidden;
+}
+
+input[type=checkbox]+span {
+    display: inline-block;
+    height: 0.18in;
+    width: 0.18in;
+    border-radius: 4px;
+    background-color: gray;        
+}
+
+input[type=checkbox]:checked+span {
+    background-color: red;
+}
+
+label{
+	font-size:0.19in;
+}

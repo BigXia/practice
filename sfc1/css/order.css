@@ -1,0 +1,18 @@
+#order_left {
+	width:23%;
+	height:6in;
+	background-color:#efefef;
+	overflow:scroll;
+	border-width:0;
+	float:left;
+}
+
+#order_right {
+	width:77%;
+	height:6in;
+	background-color:#ffffff;
+	overflow:scroll;
+	border-width:0;
+	float:left;
+}
+
